@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    /* outline:3px solid red; */
+}
+
+:root {
+    --padding-container: 80px 60px;
+    --color-primary: #b8fc53;
+    --color-secondary: #301e1e;
+    --color-bg: #fafafa;
+    --align-title: center;
+    --box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: var(--padding-container);
+}
+
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(to top, #b5a7a4a4 0%, #88584a88 100%), url(../img/ben-kolde-bs2Ba7t69mM-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero_main {
+    height: 100%;
+}
+
+.hero__texts {
+    text-align: center;
+    color: var(--color-primary);
+    text-shadow: var(--color-secondary) 2px 0px 1px;
+}
+
+.hero__title {
+    font-size: 4rem;
+}
+
+.hero__copy {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.hero__copy1 {
+    font-size: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    text-shadow: var(--color-secondary) 2px 0px 1px;
+    text-align: var(--align-title);
+}
+
+/*ABOUT SECTION*/
+.about__container {
+    background-image: linear-gradient(to bottom, #B5A7A4 0%, #754443 100%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about__picture {
+    width: 45%;
+    text-align: center;
+    margin: 0;
+}
+
+.about__img {
+    max-width: 80%;
+}
+
+.about__texts {
+    width: 50%;
+    --align-title: left;
+}
+
+.about__paragraf {
+    line-height: 1.5;
+}
+
+.about__cta {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+/*SERVICIOS*/
+.servicios {
+    background-image: linear-gradient(to top, #B5A7A4 0%, #754443 100%);
+}
+
+.servicios__cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.servicios__card {
+    width: 27%;
+    background: whitesmoke;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.servicios__img {
+    width: 100%;
+    display: block;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+
+.servicios__texts {
+    padding: 30px 20px 40px;
+    margin-bottom: 20px;
+}
+
+.servicios__title {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--color-secondary);
+    margin: 0;
+}
+
+.servicios__paragraf {
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.servicios__cta {
+    display: block;
+    background: var(--color-primary);
+    padding: 15px 0;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-secondary);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+}
+
+/*COPY SECTION*/
+.copy {
+    background: #754443;
+}
+
+/*Gallery*/
+.gallery {
+    background-image: linear-gradient(to bottom, #B5A7A4 0%, #754443 100%);
+}
+
+.gallery__container {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery__img {
+    width: 30%;
+}
+
+.title--shadow {
+    color: var(--color-secondary);
+    text-shadow: var(--color-primary) 2px 0px 1px;
+}
+
+/*LANGUAGES*/
+.languages {
+    background-image: linear-gradient(to top, #B5A7A4 0%, #754443 100%);
+}
+
+.languages__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.languages__img {
+    width: 5%;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: var(--color-secondary);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: yellow;
+    padding: 40px 10px;
+}
+
+.footer__link:hover{
+    color: var(--color-primary);
+}
+
+.footer__icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 15px;
+    border: 1px solid white;
+    font-size: 2rem;
+    color: white;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    
+}
+
+.footer__icon:hover{
+    color:var(--color-secondary);
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
+.footer__icon.fab{
+    line-height: 60px;
+}
+
+.icono{
+    width: 80%;
+    margin: 0;
+}
+.footer__icono {
+    margin: 0 150px 0 0;
+    width: 60%;
+}
+
+/*responsive*/
+@media screen and (max-width: 800px){
+    .hero{
+        height: auto;
+        min-height: 100vh;
+        --padding-container: 40px 10px;
+    }
+
+    .hero__texts{
+        word-wrap: break-word;
+    }
+
+    .about__texts{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        --align-title:center;
+    }
+
+    .about__picture{
+        width: 100%;
+    }
+
+    .servicios__card{
+        width: 45%;
+        margin-bottom: 30px;
+        word-wrap: break-word;
+    }
+
+    .gallery__img{
+        width: 45%;
+    }
+
+    .languages__container{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .languages__img{
+        width: 20%;
+        margin: 10px 10px;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+    }
+
+    .footer__icono{
+        margin: 30px auto;
+    }
+
+    .footer__container{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .hero__title{
+        font-size: 2.8rem;
+    }
+
+    .hero__copy{
+        font-size: 1rem;
+    }
+
+    .hero__copy1{
+        font-size: 1.5rem;
+    }
+
+    .title{
+        font-size: 2.2rem;
+        word-wrap: break-word;
+    }
+    
+    .about__paragraf {
+        line-height: 1.1;
+    }
+
+    .servicios__card{
+        width:90%
+    }
+
+    .gallery__img{
+        width: 90%;
+    }
+
+    .languages__container{
+        justify-content: space-around;
+    }
+
+    .languages__img{
+        width: 35%;
+        margin-bottom: 30px;
+    }
+}
